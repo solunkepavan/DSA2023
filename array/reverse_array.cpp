@@ -1,11 +1,12 @@
 #include<iostream>
+#include<vector>
 using namespace std;
 
 
-int reversearray(int arr[], int size){
+vector<int> reversearray(vector<int> arr, int m){
 
-    int s = 0;
-    int e = size - 1;
+    int s = m + 1;
+    int e = arr.size() - 1;
     
     while(s<=e){
 
@@ -14,12 +15,12 @@ int reversearray(int arr[], int size){
         e--;
 
     }
-    return -1;
+    return arr;
 }
 
-void printarray(int arr[] , int size){
+void printarray(vector<int> arr){
 
-    for (int i=0; i<size; i++){
+    for (int i=0; i<arr.size(); i++){
         cout << arr[i] << " ";
     }
     cout << endl;
@@ -27,15 +28,25 @@ void printarray(int arr[] , int size){
 
 
 int main(){
-    int arr[5] = {2,3,6,4,7};
+    vector<int> arr;
 
-    cout << "Original Array :"<<endl;
-    printarray(arr,5);
+    arr.push_back(1);
+    arr.push_back(2);
+    arr.push_back(3);
+    arr.push_back(4);
+    arr.push_back(5);
+    arr.push_back(6);
+    int m ;
+    cout <<"Enter Position"<<endl;
+    cin >> m;
 
-    reversearray(arr,5);
+   cout << "Original Array :"<<endl;
+    printarray(arr);
+
+    vector<int> ans = reversearray(arr,m);
 
     cout << "Reverse Array :"<<endl;
-    printarray(arr,5);
+    printarray(ans);
 
     return 0;
 }
