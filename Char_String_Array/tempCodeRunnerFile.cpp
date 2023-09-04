@@ -1,0 +1,2 @@
+
+    if(checkPalindrome(name,count)){
