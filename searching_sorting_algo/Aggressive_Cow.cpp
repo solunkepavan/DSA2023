@@ -20,10 +20,6 @@ bool isPossible(int stalls[], int n,int k, int mid){
     return false;
 }
 
-
-
-
-
 int aggressiveCows(int stalls[],int n, int k)
 {
     sort( stalls, stalls + n);
