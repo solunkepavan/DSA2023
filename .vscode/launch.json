@@ -1,7 +1,6 @@
 {
   "version": "0.2.0",
   "configurations": [
-    
     {
       "name": "C/C++ Runner: Debug Session",
       "type": "cppdbg",
@@ -9,8 +8,8 @@
       "args": [],
       "stopAtEntry": false,
       "externalConsole": true,
-      "cwd": "p:/DSA 2023/Practice_DSA",
-      "program": "p:/DSA 2023/Practice_DSA/build/Debug/outDebug",
+      "cwd": "e:/DSA 2023/Practice_DSA",
+      "program": "e:/DSA 2023/Practice_DSA/build/Debug/outDebug",
       "MIMode": "gdb",
       "miDebuggerPath": "gdb",
       "setupCommands": [
